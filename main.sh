@@ -238,7 +238,7 @@ def: main()
     mv $out ${set_dir:-/sdcard/Ytmp3} 2> /dev/null
   echo;echo;# yonglek anyink :v
  	echo -e "${ku}[${pu}$(date +%H:%M:%S)${ku}]${pu} size ${me}-${ij}>${pu} $size"
-  echo -e "${ku}[${pu}$(date +%H:%M:%S)${ku}]$pu save ${me}-${ij}>$pu dir ${ku}=$pu $set_dir${ij};$pu name ${me}-${ij}>$pu $out$st"
+  echo -e "${ku}[${pu}$(date +%H:%M:%S)${ku}]$pu save ${me}-${ij}>$pu dir ${ku}=$pu ${set_dir:-/sdcard/Ytmp3}${ij};$pu name ${me}-${ij}>$pu $out$st"
   echo
   Tulis.strN "${me}[${ku}+${me}]$pu Proses Telah Selesai"
   Tulis.strN "${me}[${ku}+${me}]${pu} Total ${me}:${pu} $(date +%N)${hi}s${st}"; echo; tput cnorm sgr0; exit
