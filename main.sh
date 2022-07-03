@@ -43,7 +43,7 @@ class __ytdl__;
   {
     argv.get_arg ["$1"]; # url yt
     argv.get_arg ["$2"]; # output
- 		argv.get_arg ["$3"]; # type
+    argv.get_arg ["$3"]; # type
 
     __ytdl__::parse "$url"
     trap "rm -rf $output.mp3 $output.mp4 &>/dev/null; exit \?" INT SIGINT
