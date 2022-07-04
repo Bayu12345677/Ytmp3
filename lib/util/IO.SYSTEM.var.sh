@@ -56,8 +56,7 @@ IO.var::sys(){
 IO.var(){
 	declare -g __lol__name="$1"
 	declare -g __lol__argv="$2"
-	set -- ${@:3}
-	declare -g __lol__input="${@}"
+	declare -g __lol__input="${@:3}"
      var::found "${__lol__name}" "${__lol__input}"
      # Came across this looking for something else.
      # While the post looks fairly old,

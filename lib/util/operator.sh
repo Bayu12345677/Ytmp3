@@ -38,8 +38,9 @@ sys.return()
 {
 	global: __text__ = "$@"
 
-	var __testing__ : "${text:-None}"
-	var __subject__ : "${__text__}"
+	var __testing__ : "${text:-${__text__:-None}}"
+	var __subject__ : "$__testing__"
+	
 }
 
 shopt -s expand_aliases
