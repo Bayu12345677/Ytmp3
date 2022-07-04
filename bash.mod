@@ -14,7 +14,8 @@ var m : $(mode.bold: pink)
 var pu : $(mode.bold: putih)
 var cy : $(mode.bold: cyan)
 var bi : $(mode.bold: biru)
-var st : $(default.color) 
+var st : $(default.color)
+
 # deklarasikan object
 const: __curlopt__ = opt
 const: __minimist__ = argv

@@ -1,4 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/bash
 source main.sh
 
-clear && main
+clear && __main__
