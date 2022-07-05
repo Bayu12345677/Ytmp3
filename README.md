@@ -1,7 +1,7 @@
 # Ytmp3
 download your youtube videos using script
 <details open>
-  <summary><strong> Install Package </strong></summary>
+  <summary><strong> Install Depencies </strong></summary>
 
   ```php
   $ pkg update
@@ -12,7 +12,7 @@ download your youtube videos using script
   </details>
 
 <details open>
-  <summary><strong> Install Git </strong></summary>
+  <summary><strong> Install repo </strong></summary>
 
   ```php
   $ git clone https://github.com/Bayu12345677/Ytmp3
