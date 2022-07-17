@@ -138,13 +138,14 @@ def: __main__()
   while true; do
     animasi "${ku}●$pu Memeriksa url"
   done &
+  tput rc
   let slebew=$!
   if ! (curl -sL "$p" --insecure --compressed -o /dev/null); then
-    kill "$slebew" &> /dev/null
+    kill -0 "$slebew" &> /dev/null
     tput ed
     Tulis.strN "${me}●$pu Url tidak valid"; tput cnorm; exit
   elif (ambil: p in "shorts"); then
-    kill "$slebew" &> /dev/null
+    kill -0 "$slebew" &> /dev/null
     tput ed
       tput sc
       animasi "${ku}(${me}•${ij}•${ku})${pu} mencari video" &
@@ -301,6 +302,7 @@ def: __main__()
         tput cnorm; exit
      #Tulis.strN "${ku}[${me}+${ku}]${pu} format Tidak di ketahui ${ij}\$${me}/${ij}\$${m} (${hi}$p${m})$st"; tput cnorm; exit
   fi
+  kill "$slebew" 2> /dev/null
   tput sc
   animasi "${ku}❑$pu mengecek folder";tput rc
   if (mkdir /sdcard/Ytmp3 &> /dev/null); then
